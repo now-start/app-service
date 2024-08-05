@@ -32,4 +32,4 @@ jobs:
           password: ${{ github.token }}
 
       - name: Push Docker image
-        run: docker push ghcr.io/${{ github.repository }}/app-service:latest
+        run: docker push ghcr.io/${{ github.repository }}:latest

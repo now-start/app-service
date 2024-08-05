@@ -36,3 +36,7 @@ dependencies {
 tasks.named('test') {
     useJUnitPlatform()
 }
+
+bootBuildImage {
+    imageName = "ghcr.io/now-start/${project.name}:latest"
+}
