@@ -11,7 +11,6 @@ public class TestController {
 
     @GetMapping("/test")
     public String test(HttpServletRequest request) throws InterruptedException {
-        sleep(1000);
         return request.getLocalAddr() + ":" + request.getServerPort();
     }
 }
