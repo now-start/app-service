@@ -1,3 +1,28 @@
 spring:
   application:
-    name: app-service
+    name: app
+
+server:
+  port: 8080
+
+management:
+  server:
+    port: 8081
+  info:
+    os:
+      enabled: true
+    java:
+      enabled: true
+    process:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+
+logging:
+  file:
+    path: build/log
